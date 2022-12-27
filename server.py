@@ -18,6 +18,10 @@ def loadCompetitions():
         return listOfCompetitions
 
 
+competitions = loadCompetitions()
+clubs = loadClubs()
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -77,5 +81,4 @@ def logout():
     return redirect(url_for('index'))
 
 
-competitions = loadCompetitions()
-clubs = loadClubs()
+
