@@ -18,6 +18,10 @@ def loadCompetitions():
         return listOfCompetitions
 
 
+competitions = loadCompetitions()
+clubs = loadClubs()
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -70,7 +74,9 @@ def purchasePlaces():
     return render_template('welcome.html', club=club, competitions=competitions)
 
 
-# TODO: Add route for points display
+@app.route('/showClubsPoints')
+def displayClubsPoints():
+    return render_template('display_points.html', clubs=clubs)
 
 
 @app.route('/logout')
@@ -78,5 +84,4 @@ def logout():
     return redirect(url_for('index'))
 
 
-competitions = loadCompetitions()
-clubs = loadClubs()
+
