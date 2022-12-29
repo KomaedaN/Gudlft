@@ -10,4 +10,3 @@ class TestDisplayClubPoints:
         result = self.client.get('/showClubsPoints')
 
         assert result.status_code == 200
-
