@@ -14,12 +14,12 @@ Run project :
     
 Tests :
 
-    - you can run "pytest" to tests all unit, integrity, functional tests 
+    - you can run "pytest" to tests all unit, integrity and functional tests 
     
     - generate tests report with coverage :
         run "coverage run -m pytest tests " and then "coverage report" to generate all tests report except performance.
        
     - performance tests with locust :
-        run "locust -f tests/tests_performance/locustfile.py" and use "http://localhost:8089/" 
+        run "locust -f tests/tests_performance/locustfile.py" and then use "http://localhost:8089/" url
 
            
