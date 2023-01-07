@@ -14,7 +14,7 @@ Run project :
     
 Tests :
 
-    - you can run "pytest" to tests all unit, integrity and functional tests 
+    - you can run "pytest" to test all unit, integrity and functional tests 
     
     - generate tests report with coverage :
         run "coverage run -m pytest tests " and then "coverage report" to generate all tests report except performance.
