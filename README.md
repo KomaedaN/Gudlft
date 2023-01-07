@@ -13,6 +13,7 @@ Run project :
     - flask run
     
 Tests :
+
     - you can run "pytest" to tests all unit, integrity, functional tests 
     
     - generate tests report with coverage :
